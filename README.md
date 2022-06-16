@@ -6,23 +6,24 @@ Up to 13 calibrated, ensemble CLM5 netcdf output datasets over CONUS at
 1/8-degree resolution. The netcdf datasets include all CLM5 output
 variables. Simulation time period: 1980 to 2020.
 
-If you have questions, please contact Hongxiang Yan
-(<hongxiang.yan@pnnl.gov>)
-
-Please note: if you decide to use this data, please cite the following
-reference:
-
-Yan, H., Sun, N., Eldardiry, H., Thurber, T., Reed, P., Malek, K.,
-Gupta, R., Kennedy, D., Swenson, S., Hou, Z., Cheng, Y., Rice, J.
-Importance of Parameter Uncertainty in the Community Land Model Version
-5 (CLM5) for Hydrological Applications. Journal of Advances in Modeling
-Earth Systems, under review.
+If you have questions, please contact [Hongxiang Yan](hongxiang.yan@pnnl.gov).
 
 ## Data Availability
 
 The dataset is currently available on Globus:
 
 *TODO: insert globus link*
+
+## Suggested Citation
+
+Note that the manuscript relating to this data is currently under review,
+please work with [Hongxiang Yan](hongxiang.yan@pnnl.gov) before using in your own publications.
+
+Yan, H., Sun, N., Eldardiry, H., Thurber, T., Reed, P., Malek, K.,
+Gupta, R., Kennedy, D., Swenson, S., Hou, Z., Cheng, Y., Rice, J.
+Importance of Parameter Uncertainty in the Community Land Model Version
+5 (CLM5) for Hydrological Applications. Journal of Advances in Modeling
+Earth Systems, under review.
 
 ## CLM Model Version
 
