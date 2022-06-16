@@ -18,6 +18,12 @@ Importance of Parameter Uncertainty in the Community Land Model Version
 5 (CLM5) for Hydrological Applications. Journal of Advances in Modeling
 Earth Systems, under review.
 
+## Data Availability
+
+The dataset is currently available on Globus:
+
+*TODO: insert globus link*
+
 ## CLM Model Version
 
 The Community Land Model Version 5 (CLM5), with additional developments to support
