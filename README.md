@@ -1,4 +1,4 @@
-# Calibrated, Ensemble, CLM5 Datasets over CONUS by IM3 Team
+# Calibrated, Ensemble, CLM5 Datasets over CONUS
 
 ## Data Availability
 
