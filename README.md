@@ -4,7 +4,7 @@
 
 The dataset is currently available on Globus:
 
-*TODO: insert globus link*
+[https://app.globus.org/file-manager?origin_id=b8720766-f3da-11ec-aede-6f7c2b57b05c](https://app.globus.org/file-manager?origin_id=b8720766-f3da-11ec-aede-6f7c2b57b05c)
 
 ## Suggested Citation
 
