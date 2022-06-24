@@ -8,8 +8,8 @@ The dataset is currently available on Globus:
 
 ## Suggested Citation
 
-Note that the manuscript relating to this data is currently under review,
-please work with [Hongxiang Yan](hongxiang.yan@pnnl.gov) before using in your own publications.
+Note that the manuscript relating to this data is currently under review.
+Please work with [Hongxiang Yan](hongxiang.yan@pnnl.gov) before using in your own publications.
 
 Yan, H., Sun, N., Eldardiry, H., Thurber, T., Reed, P., Malek, K.,
 Gupta, R., Kennedy, D., Swenson, S., Hou, Z., Cheng, Y., Rice, J.
@@ -30,9 +30,9 @@ the same calibrated parameter). A total of 13 error metrics were used for calibr
 to aid in different applications of CLM5.
 
 <img src="folder_structure.png" style="width:100%;" />
-<figcaption align="center"><i>
+<div style="text-align:center;"><figcaption><i>
 Figure 1: Dataset folder structure representing cluster number and parameter set ID
-</i></figcaption>
+</i></figcaption></div>
 
 In each cluster the grid cell number, latitude, and longitude are provided in the
 NetCDF files. Lake areas were removed in the simulation.
@@ -42,13 +42,14 @@ related to the error metric used in the calibration as shown in the following ta
 For example, the "par_256" folder in Cluster 1 indicated the calibrated simulation using
 M-MAE and M-TRMSE error metrics. 
 
-<figcaption align="center"><i>
+<div style="text-align:center;"><figcaption><i>
 Table 1: Calibrated parameter set ID for each cluster and metric. M-KGE: monthly flow
 KGE; M-NSE: monthly flow NSE; M-RMSE: monthly flow root-mean-squared-error; M-MAE:
 monthly flow mean absolute error; M-TRMSE: monthly flow transformed root-mean-squared-error
 using Box-Cox transformation. D- for daily.
-</i></figcaption>
+</i></figcaption></div>
 
+<div style="text-align:center;">
 <table>
 <colgroup>
 <col style="width: 9%" />
@@ -245,6 +246,7 @@ using Box-Cox transformation. D- for daily.
 </tr>
 </tbody>
 </table>
+</div>
 
 For questions, please contact [Hongxiang Yan](hongxiang.yan@pnnl.gov).
 
@@ -293,20 +295,21 @@ parameter sets. For each error metric at each cluster, we selected the parameter
 performed best for most of the basins as the calibrated regional parameter set for CONUS
 simulation.
 
-<img src="experiment_diagram.png" style="width:100%;" />
-<figcaption align="center"><i>
+<div style="text-align:center;"><img src="experiment_diagram.png" style="width:100%;" />
+<figcaption><i>
 Figure 2: Experiment diagram
-</i></figcaption>
+</i></figcaption></div>
 
 ## Calibrated Hydrologic Parameter Sets
 
 A total of 15 hydrologic parameters were selected in the calibration and
 provided in the following table.
 
-<figcaption align="center"><i>
+<div style="text-align:center;"><figcaption><i>
 Table 2: The 15 CLM5 parameters selected for the experiment
-</i></figcaption>
+</i></figcaption></div>
 
+<div style="text-align:center;">
 <table>
 <colgroup>
 <col style="width: 10%" />
@@ -427,14 +430,16 @@ value at which DSL initiates</td>
 </tr>
 </tbody>
 </table>
+</div>
 
 The calibrated parameter sets values for each parameter ID in the above
 table were:
 
-<figcaption align="center"><i>
+<div style="text-align:center;"><figcaption><i>
 Table 3: The parameter values for the calibrated CONUS runs
-</i></figcaption>
+</i></figcaption></div>
 
+<div style="text-align:center;">
 <table>
 <colgroup>
 <col style="width: 6%" />
@@ -2152,3 +2157,4 @@ ID</th>
 </tr>
 </tbody>
 </table>
+</div>
