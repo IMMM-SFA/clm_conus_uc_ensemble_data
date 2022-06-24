@@ -21,15 +21,18 @@ Earth Systems, under review.
 
 ## Data Description
 
-These datasets provide observed flow, calibrated, ensemble (~13) CLM5 NetCDF
-output over CONUS at 1/8-degree resolution. The NetCDF datasets include
-all CLM5 output variables. Simulation time period is 1980 to 2020.
+These datasets provide CLM5 NetCDF output over CONUS at 1/8-degree resolution that represent the best performing 
+parameter sets for each of 13 streamflow-focused performance error metrics. The alternative streamflow error metrics
+emphasize different timescales, flow characteristics, and seasonality. The NetCDF datasets include
+all CLM5 output variables. The simulation time period is 1980 to 2020.
 
-The CONUS domain (1/8-degree grid cell) is classified into 7 clusters (see the
+The CONUS domain (1/8-degree grid cell) is classified into 7 regional clusters (see the
 picture below, labeled C1 to C7). We calibrated a regional parameter set for each
 cluster for a specific error metric (i.e., all grid cells within each cluster used
-the same calibrated parameter). A total of 13 error metrics were used for calibration
-to aid in different applications of CLM5.
+the same calibrated parameter). The 13 error metrics used for calibration encompass streamflow
+traits that have relevance for different endpoint applications of CLM5 (e.g., variability-timing
+errors at daily timescales for flood analyses; monthly or seasonal water balance for water management of 
+droughts, etc.).
 
 <img src="folder_structure.png" style="width:100%;" />
 <div style="text-align:center;"><figcaption><i>
@@ -285,7 +288,7 @@ DE-AC02-05CH11231.
 
 The CLM5 Uncertainty Characterization (UC) experiment and parameter calibration is shown
 in the following figure. CLM5 was configured and simulated individually at each of the
-464 CAMELS basins with long-term natural flow measurements. The 464 CAMELS basins were
+464 CAMELS basins with long-term natural streamflow measurements. The 464 CAMELS basins were
 classified into 7 clusters based on meteorological data and basin characteristics. The
 same clustering system was then applied to 1/8-degree grid cells over CONUS to aid in
 calibration efforts for ungauged basins. We selected 15 hydrologic parameters that are
