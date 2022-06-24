@@ -1,13 +1,5 @@
 # Calibrated, Ensemble, CLM5 Datasets over CONUS by IM3 Team
 
-## Data Description
-
-Up to 13 calibrated, ensemble CLM5 netcdf output datasets over CONUS at
-1/8-degree resolution. The netcdf datasets include all CLM5 output
-variables. Simulation time period: 1980 to 2020.
-
-If you have questions, please contact [Hongxiang Yan](hongxiang.yan@pnnl.gov).
-
 ## Data Availability
 
 The dataset is currently available on Globus:
@@ -25,52 +17,37 @@ Importance of Parameter Uncertainty in the Community Land Model Version
 5 (CLM5) for Hydrological Applications. Journal of Advances in Modeling
 Earth Systems, under review.
 
-## CLM Model Version
+## Data Description
 
-The Community Land Model Version 5 (CLM5), with additional developments to support
-parameter evaluation, was used to produce these ensemble data sets. This model version
-is tracked as [im3-clm](https://github.com/IMMM-SFA/im3-clm), version v1.0.0.
-https://doi.org/10.5281/zenodo.6653705. The additional developments were provided by
-the [NCAR](https://ncar.ucar.edu/) development team.
+These datasets provide observed flow, calibrated, ensemble (~13) CLM5 NetCDF
+output over CONUS at 1/8-degree resolution. The NetCDF datasets include
+all CLM5 output variables. Simulation time period is 1980 to 2020.
 
-## Meteorological Forcing
+The CONUS domain (1/8-degree grid cell) is classified into 7 clusters (see the
+picture below, labeled C1 to C7). We calibrated a regional parameter set for each
+cluster for a specific error metric (i.e., all grid cells within each cluster used
+the same calibrated parameter). A total of 13 error metrics were used for calibration
+to aid in different applications of CLM5.
 
-Dynamically downscaled ECMWF Reanalysis v5 (ERA5) using WRF through
-Thermodynamic Global Warming (TGW) Approach. Deeksha Rastogi (Oak Ridge National Lab),
-Pouya Vahmani (Lawrance Berkeley National Lab), Andrew Jones (Lawrance Berkeley
-National Lab). Under review. Available on
-[Globus](https://app.globus.org/file-manager?origin_id=c296b088-b769-11eb-afd8-e1e7a67e00c1&origin_path=%2F).
+<img src="folder_structure.png" style="width:100%;" />
+<figcaption align="center"><i>
+Figure 1: Dataset folder structure representing cluster number and parameter set ID
+</i></figcaption>
 
-The climate forcing was developed collaboratively between the IM3
-and HyperFACETS projects, both of which are supported by the U.S. Department of Energy,
-Office of Science, as part of research in MultiSector Dynamics, and Regional and Global
-Model Analysis, Earth and Environmental System Modeling Program. A portion of this
-research used the computing resources of the National Energy Research Scientific
-Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility
-located at Lawrence Berkeley National Laboratory, operated under Contract No.
-DE-AC02-05CH11231.
+In each cluster the grid cell number, latitude, and longitude are provided in the
+NetCDF files. Lake areas were removed in the simulation.
 
-Conversion from native WRF output to CLM input was performed by Linying Wang
-(Boston University), using code available
-[here](https://github.com/IMMM-SFA/urban_clm5/tree/WRF_generated_forcing_for_CLM5).
+For example, the folder "par_256" indicates the calibrated parameter number, which is
+related to the error metric used in the calibration as shown in the following table.
+For example, the "par_256" folder in Cluster 1 indicated the calibrated simulation using
+M-MAE and M-TRMSE error metrics. 
 
-## Data Structure 
-
-CONUS is classified into 7 clusters (see the picture below, C1 to C7)
-and we calibrated a regional parameter for each cluster for a specific
-error metric (i.e., all grid cells within each cluster used the same
-calibrated parameter). A total of 13 error metrics were used for
-calibration to aid in different applications of CLM5.
-
-<img src="folder_structure.png" style="width:75%;" />
-
-In each cluster, grid cell number, and latitude and longitude were
-provided in the netcdf files. Lake areas were removed in the simulation.
-
-The “par_256” indicates the calibrated parameter number, which is
-related to the error metric used in the calibration as shown in the
-following table. For example, the par_256 in Cluster 1 indicated the
-calibrated simulation using M-MAE and M-TRMSE error metrics.
+<figcaption align="center"><i>
+Table 1: Calibrated parameter set ID for each cluster and metric. M-KGE: monthly flow
+KGE; M-NSE: monthly flow NSE; M-RMSE: monthly flow root-mean-squared-error; M-MAE:
+monthly flow mean absolute error; M-TRMSE: monthly flow transformed root-mean-squared-error
+using Box-Cox transformation. D- for daily.
+</i></figcaption>
 
 <table>
 <colgroup>
@@ -269,15 +246,66 @@ calibrated simulation using M-MAE and M-TRMSE error metrics.
 </tbody>
 </table>
 
-M-KGE: monthly flow KGE; M-NSE: monthly flow NSE; M-RMSE: monthly flow
-root-mean-squared-error; M-MAE: monthly flow mean absolute error;
-M-TRMSE: monthly flow transformed root-mean-squared-error using box-cox
-transformation.
+For questions, please contact [Hongxiang Yan](hongxiang.yan@pnnl.gov).
+
+## CLM Model Version
+
+The Community Land Model Version 5 (CLM5), with additional developments to support
+parameter evaluation, was used to produce these ensemble data sets. This model version
+is tracked as [im3-clm](https://github.com/IMMM-SFA/im3-clm), version v1.0.0.
+https://doi.org/10.5281/zenodo.6653705. The additional developments were provided by
+the [NCAR](https://ncar.ucar.edu/) development team.
+
+## Meteorological Forcing
+
+Dynamically downscaled ECMWF Reanalysis v5 (ERA5) using WRF through
+Thermodynamic Global Warming (TGW) Approach. Deeksha Rastogi (Oak Ridge National Lab),
+Pouya Vahmani (Lawrance Berkeley National Lab), Andrew Jones (Lawrance Berkeley
+National Lab). Under review. Available on
+[Globus](https://app.globus.org/file-manager?origin_id=c296b088-b769-11eb-afd8-e1e7a67e00c1&origin_path=%2F).
+
+Conversion from native WRF output to CLM input was performed by Linying Wang
+(Boston University), using code available
+[here](https://github.com/IMMM-SFA/urban_clm5/tree/WRF_generated_forcing_for_CLM5).
+
+The climate forcing was developed collaboratively between the IM3
+and HyperFACETS projects, both of which are supported by the U.S. Department of Energy,
+Office of Science, as part of research in MultiSector Dynamics, and Regional and Global
+Model Analysis, Earth and Environmental System Modeling Program. A portion of this
+research used the computing resources of the National Energy Research Scientific
+Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility
+located at Lawrence Berkeley National Laboratory, operated under Contract No.
+DE-AC02-05CH11231.
+
+## Methods
+
+The CLM5 Uncertainty Characterization (UC) experiment and parameter calibration is shown
+in the following figure. CLM5 was configured and simulated individually at each of the
+464 CAMELS basins with long-term natural flow measurements. The 464 CAMELS basins were
+classified into 7 clusters based on meteorological data and basin characteristics. The
+same clustering system was then applied to 1/8-degree grid cells over CONUS to aid in
+calibration efforts for ungauged basins. We selected 15 hydrologic parameters that are
+likely to have dominant impacts on the simulation of hydrologic processes. For each basin,
+we used the Latin Hypercube Sampling (LHS) method to sample 1,500 parameter sets from their
+uniform prior distributions, resulting in a total of 1,500×464=696,000 runs. For each error
+metric at each basin, we identified the best performance parameter ID among the 1,500
+parameter sets. For each error metric at each cluster, we selected the parameter ID that
+performed best for most of the basins as the calibrated regional parameter set for CONUS
+simulation.
+
+<img src="experiment_diagram.png" style="width:100%;" />
+<figcaption align="center"><i>
+Figure 2: Experiment diagram
+</i></figcaption>
 
 ## Calibrated Hydrologic Parameter Sets
 
 A total of 15 hydrologic parameters were selected in the calibration and
 provided in the following table.
+
+<figcaption align="center"><i>
+Table 2: The 15 CLM5 parameters selected for the experiment
+</i></figcaption>
 
 <table>
 <colgroup>
@@ -402,6 +430,10 @@ value at which DSL initiates</td>
 
 The calibrated parameter sets values for each parameter ID in the above
 table were:
+
+<figcaption align="center"><i>
+Table 3: The parameter values for the calibrated CONUS runs
+</i></figcaption>
 
 <table>
 <colgroup>
