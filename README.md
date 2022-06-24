@@ -9,7 +9,7 @@ The dataset is currently available on Globus:
 ## Suggested Citation
 
 Note that the manuscript relating to this data is currently under review.
-Please work with [Hongxiang Yan](hongxiang.yan@pnnl.gov) before using in your own publications.
+Please work with [Hongxiang Yan](mailto:hongxiang.yan@pnnl.gov) before using in your own publications.
 
 Yan, H., Sun, N., Eldardiry, H., Thurber, T., Reed, P., Malek, K.,
 Gupta, R., Kennedy, D., Swenson, S., Hou, Z., Cheng, Y., Rice, J.
@@ -248,7 +248,7 @@ using Box-Cox transformation. D- for daily.
 </table>
 </div>
 
-For questions, please contact [Hongxiang Yan](hongxiang.yan@pnnl.gov).
+For questions, please contact [Hongxiang Yan](mailto:hongxiang.yan@pnnl.gov).
 
 ## CLM Model Version
 
