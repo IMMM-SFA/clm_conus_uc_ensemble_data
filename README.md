@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6726654.svg)](https://doi.org/10.5281/zenodo.6726654)
+
 # Calibrated, Ensemble, CLM5 Datasets over CONUS
 
 ## Data Availability
